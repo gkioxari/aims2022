@@ -97,19 +97,19 @@ If [NeRF][nerf] shoots `N` rays and samples `P` points on each ray, then how man
   4. `P`
 
 ### Question 17
-Implicit 3D representations model surfaces as zero-crossings of functions. For example surface A is represented as `{p | f~A~(p) = 0}` where `f~A~` is a function. Assume B is a second surface such that `{p | f~B~(p) = 0}`. The function `f` which represents the intersection `A and B` is:
-  1. `f(p) = max(f~A~(p), f~B~(p))`
-  2. `f(p) = min(f~A~(p), f~B~(p))`  
-  3. `f(p) = f~A~(p) - f~B~(p)`
+Implicit 3D representations model surfaces as zero-crossings of functions. For example surface A is represented as `{p | fA(p) = 0}` where `fA` is a function. Assume B is a second surface such that `{p | fB(p) = 0}`. The function `f` which represents the intersection `A and B` is:
+  1. `f(p) = max(fA(p), fB(p))`
+  2. `f(p) = min(fA(p), fB(p))`  
+  3. `f(p) = fA(p) - fB(p)`
 
 ### Question 18
 Continuing from Q17, The function `f` which represents the union `A or B` is:
-  1. `f(p) = max(f~A~(p), f~B~(p))`
-  2. `f(p) = min(f~A~(p), f~B~(p))`  
-  3. `f(p) = f~A~(p) - f~B~(p)`
+  1. `f(p) = max(fA(p), fB(p))`
+  2. `f(p) = min(fA(p), fB(p))`  
+  3. `f(p) = fA(p) - fB(p)`
 
 ### Question 19
-The following implicit function `f(x,y,z) = x^2^ + y^2^ + z^2^ - 1` is a signed distance function (SDF)
+The following implicit function `f(x,y,z) = x^2 + y^2 + z^2 - 1` is a signed distance function (SDF)
   1. True
   2. False
 
